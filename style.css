@@ -1,0 +1,135 @@
+/* === SETUP === */
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-lPink: hsl(275, 100%, 97%);
+  --color-gPurple: hsl(292, 16%, 49%);
+  --color-dPurple: hsl(292, 42%, 14%);
+
+  --font-size: 1rem;
+
+  --weight-400: 400;
+  --weight-600: 600;
+  --weight-700: 700;
+}
+
+/* === FONTS === */
+
+@font-face {
+  font-family: Work-Sans-Var;
+  src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Work-Sans-Ital;
+  src: url(assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
+}
+
+/* === FONTS STATIC === */
+
+@font-face {
+  font-family: Work-Sans-Bold;
+  src: url(assets/fonts/static/WorkSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: Work-Sans-Reg;
+  src: url(assets/fonts/static/WorkSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: Work-Sans-sBold;
+  src: url(assets/fonts/static/WorkSans-SemiBold.ttf);
+}
+
+/* === BODY === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-lPink);
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Work-Sans-Var;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* === WRAPPER === */
+.wraper {
+  padding: 1.3rem;
+  width: 600px;
+  position: absolute;
+  top: 25%;
+  background-color: var(--color-white);
+  border-radius: 1.5rem;
+}
+
+.title {
+  display: flex;
+  padding-bottom: 0.7rem;
+  font-size: large;
+  gap: 1rem;
+}
+
+.title h1 {
+  font-family: Work-Sans-Bold;
+}
+
+.faq {
+  padding: 1rem;
+}
+
+.faq p {
+  display: none;
+}
+
+.faq-active p {
+  display: block;
+}
+
+.faq .question {
+  display: flex;
+  justify-content: space-between;
+}
+
+.question {
+  padding-bottom: 0.5rem;
+}
+
+.min {
+  display: none;
+}
+
+.plus,
+.min {
+  position: relative;
+  transform: translateY(-20%);
+}
+
+.faq-active .plus {
+  display: none;
+}
+
+.faq-active .min {
+  display: block;
+}
+
+.answer {
+  overflow: hidden;
+}
+
+/* === ATRIBUTE === */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
