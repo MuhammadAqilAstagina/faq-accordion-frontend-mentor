@@ -140,6 +140,7 @@ main {
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 0.729rem;
   margin-bottom: 0.919rem;
+  -webkit-tap-highlight-color: transparent;  
 }
 
 .accordion__question > .plus,
